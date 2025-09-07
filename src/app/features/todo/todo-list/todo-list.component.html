@@ -1,0 +1,16 @@
+   <app-todo-form [editTodo]="selectedTodo" (save)="handleSave($event)"></app-todo-form>
+    <table border="1" style="margin-top:20px; width:100%;">
+      <thead>
+        <tr><th>Title</th><th>Description</th><th>Actions</th></tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let todo of todos">
+          <td>{{ todo.title }}</td>
+          <td>{{ todo.description }}</td>
+          <td>
+            <button (click)="edit(todo)">Edit</button>
+            <button (click)="delete(todo.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>

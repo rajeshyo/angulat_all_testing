@@ -1,0 +1,28 @@
+    .btn {
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+      transform: scale(1.2);
+    }
+
+    .primary {
+      background-color: #c41f13;
+      color: #000000;
+    }
+
+    .danger {
+      background-color: #dc3545;
+      color: #fff;
+    }
+
+
+    .mydiv {
+      background: rgb(226, 233, 228);
+    }

@@ -1,0 +1,14 @@
+<h2>Parent Page</h2>
+<button (click)="goToChild()">Go to Child</button>
+<h2>Parent Page</h2>
+<button (click)="sendMessage()">Send Message to Child</button>
+
+
+<app-custom-button    
+  label="Go to Child" 
+  
+    (click)="goToChild()">
+</app-custom-button>
+
+<h2>{{ "hello angular pipes example" | title}}</h2>
+<button (click)="load()">Load Data</button>
